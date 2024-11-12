@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <script src="constructor.js"></script>
+    <script src="script.js" defer></script>
+    <title>Dojka.com</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="constructor.html">Конструктор</a></li>
+          </ul>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Поиск">
+            </label>
+            <button>Найти</button>
+          </div>
+        </nav>
+      </header>
+    <div class="todoContainer">
+      <h1>ToDo List</h1>
+      <form class="todoForm">
+        <input type="text" class="taskInput" placeholder="Введите событие" required>
+        <button type="submit">Добавить событие</button>
+      </form>
+      <div class="taskList"></div>
+    </div>
+</body>
+</html>

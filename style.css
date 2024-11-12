@@ -97,11 +97,26 @@ nav ul .active {
   align-items: center;
 }
 
-.search input[type="text"] {
+input[type="text"] {
   padding: 5px;
   border: none;
   border-radius: 3px;
   margin-right: 5px;
+  border: #000000 1px solid;
+}
+
+.todoForm button {
+  background-color: white;
+  color: #a83232;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.todoForm button:hover {
+  background-color: #e85050;
+  color: white;
 }
 
 .search button {
@@ -319,4 +334,42 @@ footer {
 .side-table-header {
   background-color: #ddd;
   font-weight: bold;
+}
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  justify-content: center;
+
+}
+
+.taskList .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.taskList .delete-btn {
+  background-color: #ff4c4c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.taskList .delete-btn:hover {
+  background-color: #ff0000;
 }
