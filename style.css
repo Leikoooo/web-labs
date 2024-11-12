@@ -28,7 +28,7 @@ aside p {
 main {
   text-align: center;
   background-color: #fff;
-  min-height: calc(100vh - 165px);
+  min-height: calc(100vh - 149px);
   padding-top: 20px;
 }
 
@@ -372,4 +372,38 @@ footer {
 
 .taskList .delete-btn:hover {
   background-color: #ff0000;
+}
+
+
+.preloader {
+  display: none;
+}
+
+@keyframes pulse {
+  0% {
+      opacity: 0.5;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+
+.error-message {
+  display: none;
+}
+
+.error-message.active {
+  display: block;
+}
+
+.preloader.active {
+  display: block;
+  margin-top: 2rem;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  animation: pulse 1.5s infinite;
 }

@@ -2,36 +2,54 @@
 <html lang="ru">
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <script src="constructor.js"></script>
-    <script src="script.js" defer></script>
-    <title>Dojka.com</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <script src="constructor.js"></script>
+  <script src="fetcher.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>Dojka.com</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="constructor.html">Конструктор</a></li>
-          </ul>
-          <div class="search">
-            <label>
-              <input type="text" placeholder="Поиск">
-            </label>
-            <button>Найти</button>
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="constructor.html">Конструктор</a></li>
+      </ul>
+      <div class="search">
+        <label>
+          <input type="text" placeholder="Поиск">
+        </label>
+        <button>Найти</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <div class="todoContainer">
       <h1>ToDo List</h1>
       <form class="todoForm">
         <input type="text" class="taskInput" placeholder="Введите событие" required>
         <button type="submit">Добавить событие</button>
       </form>
+      <div class="preloader">Загрузка...</div>
       <div class="taskList"></div>
+      <div class="error-message">⚠ Что-то пошло не так</div>
     </div>
+  </main>
+
+  <footer class="footer-wrapper">
+    <div class="footer-container">
+      <div class="footer-item">
+        <h3>Информаци о загрузке сайта</h3>
+        <p class="load-information">
+        <p>Время загрузки: <ins id="load-time">0.00</ins> мс</p>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
